@@ -126,24 +126,61 @@ button:hover {
 }
 
 
-@media  (max-width:600px) {
+@media (max-width: 600px) {
+
     .header {
         display: block;
         order: 1;
         margin-right: 20px;
-       
     }
 
     .container {
         width: 80%;
         padding: 15px;
     }
-    
+
+    .task {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    button {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .task-text {
+        position: relative;
+        top: -15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .task-checkbox {
+        position: relative;
+        right: -92px;
+    }
+
+
+    .edit-task {
+        position: relative;
+        width: 60%;
+        top: -8px;
+        right: -8px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .delete-task {
+        position: relative;
+        width: 60%;
+        right: -8px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
-@media (max-width:400px) {
-   #taskList {
-    display: none;
-    visibility: hidden;
-   }
-}
+
