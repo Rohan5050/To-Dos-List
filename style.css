@@ -15,11 +15,11 @@ body {
 
 header {
     width: 100%;
-    background-color: #333;
+    background-color: #0fdba8;
     color: white;
     padding: 15px 0;
     text-align: center;
-    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 15px rgba(5, 219, 226, 0.5);
 }
 
 .container {
@@ -102,7 +102,7 @@ button:hover {
 .delete-task {
     position: absolute;
     right: 10px;
-    background-color: #dc3545;
+    background-color: #ff0e00;
     color: white;
     border: none;
     padding: 5px 10px;
@@ -111,9 +111,9 @@ button:hover {
 }
 
 .edit-task {
-  position: fixed;
-  margin-left: 270px;
-  background-color: rgb(212, 212, 98);
+  position: absolute;
+  right: 90px;
+  background-color: #ffbf00;
   color: white;
   border: none;
   padding: 5px 10px;
@@ -123,4 +123,27 @@ button:hover {
 
 .delete-task:hover {
     background-color: #c82333;
+}
+
+
+@media  (max-width:600px) {
+    .header {
+        display: block;
+        order: 1;
+        margin-right: 20px;
+       
+    }
+
+    .container {
+        width: 80%;
+        padding: 15px;
+    }
+    
+}
+
+@media (max-width:400px) {
+   #taskList {
+    display: none;
+    visibility: hidden;
+   }
 }
